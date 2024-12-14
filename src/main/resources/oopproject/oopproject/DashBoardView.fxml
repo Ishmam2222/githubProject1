@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="dashBoardBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopproject.oopproject.DashBoardViewController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem mnemonicParsing="false" onAction="#uploadFileMenuItemOnAction" text="Upload File" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="115.0" layoutY="91.0" prefHeight="195.0" prefWidth="390.0" style="-fx-background-color: aqua;" text="Welcome to USER_NID Dashboard" textAlignment="CENTER" wrapText="true">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </center>
+    <left>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" BorderPane.alignment="CENTER">
+            <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="User 1" />
+                <Button mnemonicParsing="false" onAction="#openCitizenView" prefHeight="27.0" prefWidth="175.0" text="Citizen Workflow" />
+                <Button mnemonicParsing="false" onAction="#openUploadingCitizenDocuments" prefHeight="27.0" prefWidth="175.0" text="Uploading Citizen Documents" />
+                <Button mnemonicParsing="false" onAction="#openConfirmingDetailsSubmittingUNID" prefHeight="27.0" prefWidth="175.0" text="ConfirmingDetailsSubmittingU-NID" />
+                <Button mnemonicParsing="false" onAction="#openUpdatingUNIDProfile" prefHeight="27.0" prefWidth="175.0" text="Updating U-NID Profile" />
+                <Button mnemonicParsing="false" onAction="#openUNIDApplicationStatus" prefHeight="27.0" prefWidth="175.0" text="U-NIDApplicationstatus" />
+                <Button mnemonicParsing="false" onAction="#openResubmissionAfterError" prefHeight="27.0" prefWidth="175.0" text="Re-SubmissionAfterError " />
+                <Button mnemonicParsing="false" onAction="#openEditingSubmittedUNID" prefHeight="27.0" prefWidth="175.0" text="Editing Submitted U-NID" />
+                <Button mnemonicParsing="false" onAction="#openLoggingOutUNID" prefHeight="27.0" prefWidth="175.0" text="LoggingOutU-NID " />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="User 2" />
+                <Button mnemonicParsing="false" onAction="#openFieldVerificationView" prefHeight="27.0" prefWidth="175.0" text="Field Verification Workflow" />
+                <Button mnemonicParsing="false" onAction="#openVerifyingAddress" prefHeight="27.0" prefWidth="175.0" text="VerifyingAddress" />
+                <Button mnemonicParsing="false" onAction="#openDocumentReview" prefHeight="27.0" prefWidth="175.0" text="DocumentReview" />
+                <Button mnemonicParsing="false" onAction="#openSubmitFieldReport" prefHeight="27.0" prefWidth="175.0" text="Submit Field Report" />
+                <Button mnemonicParsing="false" onAction="#openVerifyingAdditionalInfo" prefHeight="27.0" prefWidth="175.0" text="VerifyingAdditionalInfo" />
+                <Button mnemonicParsing="false" onAction="#openReVerification" prefHeight="27.0" prefWidth="175.0" text="Re-Verification " />
+                <Button mnemonicParsing="false" onAction="#openReportSuspiciousInfo" prefHeight="27.0" prefWidth="175.0" text="Report Suspicious Info" />
+                <Button mnemonicParsing="false" onAction="#openUpdatingAndVerifying" prefHeight="27.0" prefWidth="175.0" text="UpdatingandVerifying" />
+            </children>
+        </VBox>
+    </left>
+    <bottom>
+        <Label prefHeight="17.0" prefWidth="755.0" style="-fx-background-color: gray;" text="Dashboard Footer" BorderPane.alignment="CENTER" />
+    </bottom>
+</BorderPane>

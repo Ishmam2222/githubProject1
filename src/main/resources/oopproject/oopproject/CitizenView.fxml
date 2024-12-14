@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopproject.oopproject.CitizenViewController">
+    <Label layoutX="200" layoutY="20" style="-fx-font-size: 18px;" text="U-NID Registration" />
+    <Button fx:id="startRegistrationButton" layoutX="200" layoutY="70" onMouseClicked="#startRegistrationAction" text="Start New Registration" />
+    <Label fx:id="captchaLabel" layoutX="100" layoutY="120" text="Solve CAPTCHA to continue:" />
+    <Button fx:id="captchaButton" layoutX="300" layoutY="120" onMouseClicked="#captchaSolvedAction" text="I'm not a robot" />
+    <Label layoutX="100" layoutY="170" text="Fill in your details:" />
+    <Label layoutX="100" layoutY="210" text="Name:" />
+    <TextField fx:id="nameField" layoutX="200" layoutY="210" prefWidth="250.0" promptText="Enter Name" />
+    <Label layoutX="100" layoutY="250" text="Date of Birth:" />
+    <Label layoutX="100" layoutY="290" text="Address:" />
+    <TextField fx:id="addressField" layoutX="200" layoutY="290" prefWidth="250.0" promptText="Enter Address" />
+    <Button fx:id="addButton" layoutX="200" layoutY="330" onMouseClicked="#accumulateCitizenToArrayListButtonMouseOnClicked" text="Add" />
+    <Button fx:id="saveButton" layoutX="300" layoutY="330" onMouseClicked="#saveArrayListToFileButtonMouseOnClicked" text="Add to File" />
+    <Label layoutX="99.0" layoutY="362.0" text="Submitted Details:" />
+    <TableView fx:id="citizenTable" layoutX="98.0" layoutY="387.0" prefHeight="150.0" prefWidth="400.0">
+        <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="150.0" text="Name" />
+            <TableColumn fx:id="dobColumn" prefWidth="120.0" text="Date of Birth" />
+            <TableColumn fx:id="addressColumn" prefWidth="130.0" text="Address" />
+        </columns>
+    </TableView>
+    <Button layoutX="100.0" layoutY="551.0" onMouseClicked="#backToDashboard" text="Back to Dashboard" />
+   <DatePicker fx:id="dobField" layoutX="200.0" layoutY="246.0" />
+</AnchorPane>

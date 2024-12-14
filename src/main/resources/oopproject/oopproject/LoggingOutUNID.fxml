@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopproject.oopproject.LoggingOutUNIDController">
+    <children>
+        <Button layoutX="106.0" layoutY="93.0" onAction="#confirmLogOut" text="Log Out" />
+        <Button layoutX="241.0" layoutY="93.0" onAction="#cancelLogOut" text="Cancel" />
+      <Label layoutX="98.0" layoutY="27.0" text="Are you sure you want to log out?" />
+    </children>
+</AnchorPane>

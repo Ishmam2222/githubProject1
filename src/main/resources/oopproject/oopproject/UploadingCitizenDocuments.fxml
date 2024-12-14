@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopproject.oopproject.UploadingCitizenDocuments">
+    <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="300.0" layoutX="150.0" layoutY="50.0" preserveRatio="true" />
+    <Button layoutX="264.0" layoutY="279.0" onAction="#loadImage" text="Upload" />
+    <Button layoutX="434.0" layoutY="279.0" onAction="#backToDashboard" text="Back to Dashboard" />
+   <Label layoutX="41.0" layoutY="268.0" text="Max file size: 5MB" />
+   <Label layoutX="41.0" layoutY="291.0" text="File format: JPG, PDF" />
+</AnchorPane>
